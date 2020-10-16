@@ -11,23 +11,6 @@ class Counter extends Component {
         tags: ['tag1', 'tag2', 'tag3'],
      }
      
-    // constructor(){
-    //     super();
-    //     this.handleIncrement = this.handleIncrement.bind(this);
-    //     console.log('Constructor', this);
-    // }
-     
-    handleIncrement = () => {
-        console.log();
-        // this.setState({ count: this.props.counter.count + 1 });
-        this.setState({ count: this.props.counter.value + 1 });
-    };
-    
-    
-    // doHandleIncrement = () => {
-    //     this.handleIncrement({id: 1});
-    // };
-
     componentDidUpdate (prevProps, prevState) {
         console.log('prevProps', prevProps);
         console.log('prevState', prevState);
