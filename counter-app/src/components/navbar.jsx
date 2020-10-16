@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 
 //stateless functional component (sfc command):
 const NavBar = ({ totalCounters }) => {
+    console.log('NavBar - Rendered');
     return ( 
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-light bg-light">
+            <a className="navbar-brand" href="#">
             Navbar <span className="badge badge-pill badge-secondary"> {totalCounters} </span>
             </a>
         </nav>
